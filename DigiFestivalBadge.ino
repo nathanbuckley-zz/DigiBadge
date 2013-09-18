@@ -61,10 +61,10 @@ void setup(void) {
 }
 
 void loop() {
-  digitalWrite(LEDpin, HIGH); //Turns LED on
-   bmpDraw("Badge0.bmp", 0, 0);
-  delay(6500);
-  bmpDraw("Badge1.bmp", 0, 0);
+  digitalWrite(LEDpin, HIGH); //Turns LED on // Remove if not adding LED
+   bmpDraw("Badge0.bmp", 0, 0); //Loads first image
+  delay(6500); //Keeps image on screen for 6.5 Seconds
+  bmpDraw("Badge1.bmp", 0, 0); //Loads next image ( Make sure images names match and are in the order you want them to load)
   delay(6500);
   bmpDraw("Badge2.bmp", 0, 0);
   delay(6500);
